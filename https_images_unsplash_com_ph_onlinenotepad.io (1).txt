@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmol Cloth House | The Standard of Power</title>
+    <style>
+        :root {
+            --gold: #D4AF37; 
+            --dark: #0A0A0A; 
+            --accent: #1A1A1A; 
+            --text-grey: #888;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0; background-color: var(--dark); color: #fff;
+            scroll-behavior: smooth; overflow-x: hidden;
+        }
+
+        /* Navigation */
+        header {
+            padding: 20px 50px; display: flex; justify-content: space-between;
+            align-items: center; background: rgba(0,0,0,0.95);
+            border-bottom: 1px solid var(--gold); position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-size: 24px; font-weight: bold; letter-spacing: 5px; color: var(--gold); text-decoration: none; }
+        nav a { color: #fff; text-decoration: none; margin-left: 30px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+        nav a:hover { color: var(--gold); }
+
+        /* Hero Section */
+        .hero {
+            height: 85vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                        url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80');
+            background-size: cover; background-position: center; border-bottom: 2px solid var(--gold);
+        }
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 5.5rem); letter-spacing: 12px; color: var(--gold); margin: 0; text-transform: uppercase; }
+        .hero p { font-size: 1rem; letter-spacing: 5px; color: var(--text-grey); margin-bottom: 30px; }
+
+        /* General Section Layout */
+        .section-padding { padding: 80px 20px; text-align: center; }
+        .container { max-width: 1100px; margin: 0 auto; }
+
+        /* Leadership Card */
+        .leader-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 60px; margin-top: 40px; }
+        .leader-card h3 { color: var(--gold); letter-spacing: 3px; margin-bottom: 5px; font-size: 1.3rem; text-transform: uppercase; }
+        .leader-card p { color: var(--text-grey); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
+
+        /* Catalog Table */
+        .table-container { overflow-x: auto; margin-top: 40px; }
+        table { width: 100%; border-collapse: collapse; border: 1px solid #222; background: #050505; }
+        th { background: #000; color: var(--gold); padding: 15px; text-align: left; letter-spacing: 1px; border-bottom: 2px solid var(--gold); font-size: 12px; }
+        td { padding: 15px; border-bottom: 1px solid #222; color: #ccc; font-size: 13px; text-align: left; }
+        .price { color: var(--gold); font-weight: bold; }
+
+        /* Form Styling */
+        .form-box { background: var(--accent); padding: 30px; border: 1px solid #222; max-width: 500px; margin: 40px auto; text-align: left; }
+        label { color: var(--gold); font-size: 10px; letter-spacing: 1px; display: block; margin-bottom: 5px; }
+        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 20px; background: #000; border: 1px solid #333; color: #fff; box-sizing: border-box; outline: none; }
+        .gold-btn { background: var(--gold); color: #000; padding: 18px; border: none; width: 100%; font-weight: bold; letter-spacing: 2px; cursor: pointer; text-transform: uppercase; }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed; bottom: 20px; right: 20px; background: #25D366; 
+            color: white; padding: 12px 20px; border-radius: 50px; 
+            text-decoration: none; font-weight: bold; box-shadow: 0 10px 25px rgba(0,0,0,0.5); z-index: 2000; font-size: 14px;
+        }
+
+        /* Footer */
+        footer { padding: 50px 20px; text-align: center; border-top: 1px solid #222; background: #050505; font-size: 11px; color: #444; letter-spacing: 1px; }
+        .legal { margin-bottom: 20px; }
+        .legal a { color: #666; text-decoration: none; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">ANMOL</a>
+        <nav>
+            <a href="#leadership">Leadership</a>
+            <a href="#catalog">Catalog</a>
+            <a href="#request">Order</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>ANMOL</h1>
+        <p>THE STANDARD OF POWER</p>
+        <div style="font-size: 12px; letter-spacing: 4px; color: var(--gold);">BAHERI | BAREILLY | UP</div>
+    </section>
+
+    <section id="leadership" class="section-padding">
+        <h2 style="color: var(--gold); letter-spacing: 5px;">THE LEADERSHIP</h2>
+        <div class="leader-grid">
+            <div class="leader-card">
+                <h3>A M A A N . Choudhary</h3>
+                <p>Founder & Managing Director</p>
+            </div>
+            <div class="leader-card">
+                <h3>Tasleem</h3>
+                <p>Chief Executive Officer (CEO)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="section-padding" style="background: #050505;">
+        <div class="container">
+            <h2 style="color: var(--gold); letter-spacing: 5px;">WHOLESALE CATALOG</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CATEGORY</th>
+                            <th>QUALITY</th>
+                            <th>MOQ</th>
+                            <th>EST. RATE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Premium Hoodies</td>
+                            <td>320+ GSM Heavy Fleece</td>
+                            <td>50 Units</td>
+                            <td class="price">₹450 - ₹650*</td>
+                        </tr>
+                        <tr>
+                            <td>Elite Tracksuits</td>
+                            <td>Premium Lycra / NS Fabric</td>
+                            <td>100 Units</td>
+                            <td class="price">₹750 - ₹1100*</td>
+                        </tr>
+                        <tr>
+                            <td>School Uniforms</td>
+                            <td>Institutional Grade</td>
+                            <td>Bulk Only</td>
+                            <td class="price">Contract Basis</td>
+                        </tr>
+                        <tr>
+                            <td>Custom T-Shirts</td>
+                            <td>180 GSM Bio-Wash Cotton</td>
+                            <td>100 Units</td>
+                            <td class="price">₹180 - ₹280*</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="color: #333; font-size: 11px; margin-top: 20px;">*Rates are ex-factory. Final price depends on volume.</p>
+        </div>
+    </section>
+
+    <section id="request" class="section-padding">
+        <h2 style="color: var(--gold); letter-spacing: 5px;">SAMPLE REQUEST</h2>
+        <div class="form-box">
+            <label>BUSINESS NAME</label>
+            <input type="text" id="bName" placeholder="Enter your business name">
+            
+            <label>SELECT PRODUCT</label>
+            <select id="pType">
+                <option>Premium Hoodie</option>
+                <option>Elite Tracksuit</option>
+                <option>School Uniform Kit</option>
+            </select>
+
+            <label>DELIVERY ADDRESS</label>
+            <textarea id="bAddr" rows="3" placeholder="Full address with Pincode"></textarea>
+
+            <button class="gold-btn" onclick="sendToWA()">Send to Founder via WhatsApp</button>
+        </div>
+    </section>
+
+    <a href="https://wa.me/919258686196" class="whatsapp-float">WhatsApp: 9258686196</a>
+
+    <footer>
+        <div class="legal">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+        </div>
+        <p>ANMOL CLOTH HOUSE © 2026 | ALL RIGHTS RESERVED | BAHERI, UP</p>
+    </footer>
+
+    <script>
+        function sendToWA() {
+            const biz = document.getElementById('bName').value;
+            const item = document.getElementById('pType').value;
+            const addr = document.getElementById('bAddr').value;
+            
+            if(!biz || !addr) {
+                alert("Please fill all details.");
+                return;
+            }
+
+            const msg = `*NEW ENQUIRY*%0A%0A*Founder:* A M A A N . Choudhary%0A*Business:* ${biz}%0A*Product:* ${item}%0A*Address:* ${addr}`;
+            window.open(`https://wa.me/919258686196?text=${msg}`, '_blank');
+        }
+    </script>
+
+</body>
+</html>
+
